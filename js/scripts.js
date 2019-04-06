@@ -73,5 +73,25 @@ $(document).ready(function () {
         $("#rollsideOne, #rollsideTwo").empty();
 
     });
+    $("button#roller1").click(function rollerOne(event) {
 
-    
+        $("#player2").removeClass("selector");
+        $("#player1").addClass("selector");
+        player1.roll = diceRoller();
+
+        $("#rollsideOne").text(player1.roll);
+        player1.dieOne();
+        $("#p1-currentscore").text(player1.currentpoints);
+    });
+
+    $("button#roller2").click(function rollerTwo(event) {
+        $("#player1").removeClass("selector");
+        $("#player2").addClass("selector");
+
+        player2.roll = diceRoller();
+
+        $("#rollsideTwo").text(player2.roll);
+        player2.dieOne();
+        $("#p2-currentscore").text(player2.currentpoints);
+    });
+
