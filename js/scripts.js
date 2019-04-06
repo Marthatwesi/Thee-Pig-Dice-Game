@@ -13,6 +13,7 @@ var diceRoller = function () {
     return Math.floor((Math.random() * 6) + 1);
     // return Math.floor(6*Math.random())+1;
 }
+
 function Player(changer) {
     this.roll = 0;
     this.currentpoints = 0;
@@ -26,6 +27,8 @@ Player.prototype.gameStart = function () {
     this.totalpoints = 0;
     $("#player1-section, #player2-section").removeClass("winner");
 }
+
+
 // tossing the die checking for 1 and switching turns
 Player.prototype.dieOne = function () {
     if (this.roll === 1) {
@@ -36,6 +39,8 @@ Player.prototype.dieOne = function () {
 
     }
 }
+
+
 // holding the die
 Player.prototype.holdDie = function () {
     this.totalpoints += this.currentpoints;
@@ -55,6 +60,8 @@ Player.prototype.checkWinner = function () {
 $("button#instruction").click(function () {
     $("#instructions").slideToggle();
 });
+
+
 $(document).ready(function () {
 
 
@@ -73,6 +80,8 @@ $(document).ready(function () {
         $("#rollsideOne, #rollsideTwo").empty();
 
     });
+
+
     $("button#roller1").click(function rollerOne(event) {
 
         $("#player2").removeClass("selector");
@@ -94,4 +103,25 @@ $(document).ready(function () {
         player2.dieOne();
         $("#p2-currentscore").text(player2.currentpoints);
     });
+
+    $("button#holder1").click(function holderOne(event) {
+        $("#player2").removeClass("selector");
+        $("#player1").addClass("selector");
+        player1.holdDie();
+        $(".p1Score").text(player1.totalpoints);
+        $("#p1-currentscore").empty();
+        $("#rollsideOne").empty();
+        player1.checkWinner();
+    });
+
+    $("button#holder2").click(function holderTwo(event) {
+        $("#player1").removeClass("selector");
+        $("#player2").addClass("selector");
+        player2.holdDie();
+        $(".p2Score").text(player2.totalpoints);
+        $("#p2-currentscore").empty();
+        $("#rollsideTwo").empty();
+        player2.checkWinner();
+    });
+});
 
