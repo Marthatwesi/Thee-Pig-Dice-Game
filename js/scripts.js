@@ -50,3 +50,8 @@ Player.prototype.checkWinner = function () {
         $("#player1-section, #player2-section").addClass("winner");
         gameStart();
     }
+}
+//user interface
+$("button#instruction").click(function () {
+    $("#instructions").slideToggle();
+});
