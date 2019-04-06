@@ -36,3 +36,29 @@ button {
     background-color: #cdffeb;
     opacity: 0.9;
 }
+#instructions {
+    width: 60%;
+    margin: auto;
+}
+
+h4 {
+    text-align: left;
+}
+
+ul,
+h3 {
+    text-align: center;
+}
+
+#roller,
+#holder,
+#starter {
+    width: 60%;
+    margin: auto;
+}
+
+#heading1 {
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 75px;
+    color: #264e70;
