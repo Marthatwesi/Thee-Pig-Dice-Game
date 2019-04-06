@@ -17,23 +17,23 @@ body {
     font-size: 20px;
 }
 .jumbotron {
-    background-color: #fed9ca;
+    background-color: #B17C14;
 }
 
 button {
-    background-color: #fbfad3;
+    background-color: #000000;
     color: #264e70;
 }
 
 #player1-section {
 
-    background-color: #cdffeb;
+    background-color: #88BD3D;
     opacity: 0.9;
 }
 
 #player2-section {
 
-    background-color: #cdffeb;
+    background-color: #88BD3D;
     opacity: 0.9;
 }
 #instructions {
@@ -56,7 +56,8 @@ h3 {
 
 #heading1 {
     text-align: center;
-    font-family: 'Playfair Display SC', serif;
+   font-family: 'Monoton',
+   cursive;
     font-size: 75px;
     color: #264e70;
     }
