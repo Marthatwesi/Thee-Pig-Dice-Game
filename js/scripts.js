@@ -55,3 +55,23 @@ Player.prototype.checkWinner = function () {
 $("button#instruction").click(function () {
     $("#instructions").slideToggle();
 });
+$(document).ready(function () {
+
+
+    $("button#starter").click(function (event) {
+
+        player1 = new Player(true);
+        player2 = new Player(false);
+
+        player1.gameStart();
+        player2.gameStart();
+        $("#player2").removeClass("selector");
+        $("#player1").removeClass("selector");
+        $("#p1-currentscore, #p2-currentscore").empty();
+        $(".p1Score").empty();
+        $(".p2Score").empty();
+        $("#rollsideOne, #rollsideTwo").empty();
+
+    });
+
+    
