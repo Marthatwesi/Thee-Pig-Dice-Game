@@ -1,3 +1,18 @@
 /* Created on : April 6, 2019, 11:08 AM
 Author     : Martha Twesigye  */
 
+body {
+    background-color: #fbfad3;
+}
+.well {
+    background-color: #679186;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+.panel {
+    background-color: #679186;
+    opacity: 0.9;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
