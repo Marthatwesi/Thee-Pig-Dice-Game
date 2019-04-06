@@ -38,8 +38,7 @@ button {
 }
 #instructions {
     width: 60%;
-    margin: auto;
-}
+    align-self: auto;}
 
 h4 {
     text-align: left;
@@ -50,9 +49,7 @@ h3 {
     text-align: center;
 }
 
-#roller,
-#holder,
-#starter {
+#roller, #holder, #starter {
     width: 60%;
     margin: auto;
 }
@@ -62,3 +59,27 @@ h3 {
     font-family: 'Playfair Display SC', serif;
     font-size: 75px;
     color: #264e70;
+    }
+
+    #instructions {
+        display: none;
+    }
+
+    .selector {
+        font-family: 'Vollkorn', serif;
+        color: #bc2525;
+        text-transform: uppercase;
+        font-style: bold;
+        text-decoration: underline;
+
+    }
+
+    .winner {
+        background-image: url("http://www.dellawards.com/components/com_virtuemart/shop_image/product/Metal_Cup_Trophy_4d7dac87ed855.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #instruction{
+        align-content: center;
+        position: fixed;
+    }
