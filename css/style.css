@@ -64,6 +64,9 @@ h3 {
 
     #instructions {
         display: none;
+        font-family: 'Bad Script',
+        cursive;
+
     }
 
     .selector {
