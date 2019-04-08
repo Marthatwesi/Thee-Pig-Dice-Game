@@ -32,11 +32,16 @@ button {
     background-color: #88BD3D;
     opacity: 0.9;
 }
-
+#player1-section:hover{
+ background-color: #DB8B53;
+}
 #player2-section {
 
     background-color: #88BD3D;
     opacity: 0.9;
+}
+#player2-section:hover {
+    background-color: #DB8B53;
 }
 #instructions {
     width: 60%;
