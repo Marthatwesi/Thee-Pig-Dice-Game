@@ -9,8 +9,8 @@ body {
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
 }
-.jumbotron-hover{
-    
+.jumbotron:hover{
+background-color: aquamarine;
 }
 .panel {
     background-color: #679186;
